@@ -1,182 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>EARTHMOVERS UAB</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .section {
+      background: white;
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .section:hover img {
+      transform: scale(1.05);
+    }
+    .section img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .section h2 {
+      margin: 20px 0 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    .section p {
+      color: #555;
+      line-height: 1.6;
+      max-width: 750px;
+      margin: auto;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/get-altay/14317263/2a000001943b1eeedcf0dfb77be8cf030d3c/XXL_height" alt="Image 1">
+  <h2>Automotive Leadership</h2>
+  <p>We specialize in new and used car dealership services, ensuring clients get the right vehicle at the right value.</p>
+</div>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=1a1f042a338b51ac174f4745caef45d1_l-8797773-images-thumbs&ref=rim&n=13&w=1920&h=1282" alt="Image 2">
+  <h2>High Quality Inventory</h2>
+  <p>Our stock features a variety of well-maintained vehicles ready for both personal and commercial use.</p>
+</div>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="section">
+  <img src="https://carswitch.com/newsroom/wp-content/uploads/2022/11/muscular-car-service-worker-repairing-vehicle.jpg" alt="Image 3">
+  <h2>Expert Maintenance</h2>
+  <p>From inspections to repairs, our certified team ensures each car runs smoothly before and after sales.</p>
+</div>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="section">
+  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1lN7rm.img?w=800&h=415&q=60&m=2&f=jpg" alt="Image 4">
+  <h2>Customer Satisfaction</h2>
+  <p>We prioritize clear communication and support, making every client experience professional and rewarding.</p>
+</div>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=d7a3670a76711c63e1b91001e5fadde4cf68bbdd-5858325-images-thumbs&n=13" alt="Image 5">
+  <h2>Contact & Reach</h2>
+  <p>Reach us at contact@earthm.shop or call +37067948917. Visit us in Vilnius, Lithuania for top-tier automotive deals.</p>
+</div>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<footer>
+  EARTHMOVERS UAB – Ukmerges g. 315b, Vilnius, LT-06306 Lithuania<br>
+  Email: contact@earthm.shop – Phone: +37067948917
+</footer>
 
 </body>
 </html>
